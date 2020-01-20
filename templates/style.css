@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* CSS Document */
+ 
+body{
+	margin: 30px;
+}
+ 
+#header_table{
+ 
+	height: 120px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	background:url(images/header.png);
+	background:no-repeat;
+}
+ 
+#contenu{
+ 
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	background: url(images/contenu_mm.png);
+	color:#000000;
+}
+ 
+# News_brief_left{
+	float:left;
+}
+ 
+# News_brief_right{
+	float:right;
+}
+ 
+# News_brief_center{
+}
+ 
+#footer{
+	clear:both;
+}
+ 
+#footer_table{
+ 
+	height: 60px;
+	margin-left: auto;
+	margin-right: auto;
+	background:url(images/footer.png);
+	background:no-repeat;
+}

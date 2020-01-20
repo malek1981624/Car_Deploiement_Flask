@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <title>Prediction Assurance Automobile</title>
+  </head>
+
+  <body>
+    <h1><div style="text-align:center"><font color="red">PREDICTION ASSURANCE AUTOMOBILE <img src="00.jpg" border="1"></font></div></h1>
+    <hr>
+
+    </br>
+    <h2><div style="text-align:center"><font color="blue">Entrer les valeurs pour la Prediction</div></h2>
+    </br>
+
+    <div class='container'>
+      <div class='row'>
+        <div class='col-6'>
+          <form method="POST" action="/result">
+            <div class="form-group">
+              <label for="Education"><p class="font-weight-bold"></br>Education</br></p></label>
+
+              <select id="edu" name="Education">
+      <option value="0">Z&eacute;ro</option>
+      <option value="1">Un</option>
+      <option value="2">Deux</option>
+      <option value="3">Trois</option>
+      <option value="4">Quatre</option>
+    </select>
+              <small id="edun" class="form-text text-muted">Entrer Une Valeur SVP</small>
+              </div>
+
+              <div class="form-group">
+                <label for="Default"><p class="font-weight-bold">Default   </p></label>
+                <select id="def" name="Default">
+      <option value="0">Z&eacute;ro</option>
+      <option value="1">Un</option>
+    </select>
+                <small id="defHelp" class="form-text text-muted">Entrer Une Valeur SVP</small>
+                </div>
+
+              <div class="form-group">
+                <label for="HHInsurance"><p class="font-weight-bold">HHInsurance</p></label>
+      <select id="hhi" name="HHInsurance">
+      <option value="0">Z&eacute;ro</option>
+      <option value="1">Un</option>
+    </select>
+                <small id="hhiHelp" class="form-text text-muted">Entrer Une Valeur SVP</small>
+                </div>
+
+              <div class="form-group">
+                <label for="CarLoan"><p class="font-weight-bold">CarLoan</p></label>
+                </label>
+    <select id="cal" name="CarLoan">
+      <option value="0">Z&eacute;ro</option>
+      <option value="1">Un</option>
+    </select>
+                <small id="calHelp" class="form-text text-muted">Entrer Une Valeur SVP</small>
+                </div>
+
+              <div class="form-group">
+                <label for="LastContactDay"><p class="font-weight-bold">LastContactDay</p></label>
+                <input type="text" data-error="Valeur Obligatoire !!!" required="required" name="LastContactDay">
+                <small id="lcdHelp" class="form-text text-muted">Entrer Une Valeur SVP</small>
+                </div>
+
+
+              <div class="form-group">
+                <label for="NoOfContact"><p class="font-weight-bold">NoOfContact</p></label>
+                <input type="text" data-error="Valeur Obligatoire !!!" required="required" name="NoOfContact">
+                <small id="nocHelp" class="form-text text-muted">Entrer Une Valeur SVP</small>
+                </div>
+
+              <div class="form-group">
+                <label for="DaysPassed"><p class="font-weight-bold">DaysPassed</p></label>
+                <input type="text" data-error="Valeur Obligatoire !!!" required="required" name="DaysPassed">
+                <small id="dapHelp" class="form-text text-muted">Entrer Une Valeur SVP</small>
+                </div>
+
+              <div class="form-group">
+                <label for="PrevAttempts"><p class="font-weight-bold">PrevAttempts</p></label>
+                <input type="text" data-error="Valeur Obligatoire !!!" required="required" name="PrevAttempts">
+                <small id="PrevAttemptsHelp" class="form-text text-muted">Entrer Une Valeur SVP</small>
+                </div>
+
+              <div class="form-group">
+                <label for="CallLength"><p class="font-weight-bold">CallLength</p></label>
+                <input type="text" data-error="Valeur Obligatoire !!!" required="required" name="CallLength">
+                <small id="CallLengthHelp" class="form-text text-muted">Entrer Une Valeur SVP</small>
+                </div>
+
+              <div class="form-group">
+                <label for="CallStartHour"><p class="font-weight-bold">CallStartHour</p></label>
+                <input type="text" data-error="Valeur Obligatoire !!!" required="required" name="CallStartHour">
+                <small id="CallStartHourHelp" class="form-text text-muted">Entrer Une Valeur SVP</small>
+                </div>
+
+              <div class="form-group">
+                <label for="LastContactWkd"><p class="font-weight-bold">LastContactWkd</p></label>
+                <input type="text" data-error="Valeur Obligatoire !!!" required="required" name="LastContactWkd">
+                <small id="LastContactWkdHelp" class="form-text text-muted">Entrer Une Valeur SVP</small>
+                </div>
+              <div class="form-group">
+                <label for="LastContactMon"><p class="font-weight-bold">LastContactMon</p></label>
+                <input type="text" data-error="Valeur Obligatoire !!!" required="required" name="LastContactMon">
+                <small id="LastContactMonHelp" class="form-text text-muted">Entrer Une Valeur SVP</small>
+                </div>
+              <div class="form-group">
+                <label for="LastContactWk"><p class="font-weight-bold">LastContactWk</p></label>
+                <input type="text" data-error="Valeur Obligatoire !!!" required="required" name="LastContactWk">
+                <small id="LastContactWkHelp" class="form-text text-muted">Entrer Une Valeur SVP</small>
+                </div>
+              <div class="form-group">
+                <label for="LastContactWkNum"><p class="font-weight-bold">LastContactWkNum</p></label>
+                <input type="text" data-error="Valeur Obligatoire !!!" required="required" data-error="Valeur Obligatoire !!!" required="required" name="LastContactWkNum">
+                <small id="LastContactWkNumHelp" class="form-text text-muted">Entrer Une Valeur SVP</small>
+                </div>
+              <div class="form-group">
+                <label for="Job_None"><p class="font-weight-bold">Job_None</p></label>
+
+    <select id="jn" name="jn">
+      <option value="0">Z&eacute;ro</option>
+      <option value="1">Un</option>
+    </select>
+                <small id="Job_NoneHelp" class="form-text text-muted">Entrer Une Valeur SVP</small>
+                </div>
+              <div class="form-group">
+                <label for="Job_admin."><p class="font-weight-bold">Job_admin.</p></label>
+                <select id="ja" name="ja">
+      <option value="0">Z&eacute;ro</option>
+      <option value="1">Un</option>
+    </select>
+                <small id="Job_admin.Help" class="form-text text-muted">Entrer Une Valeur SVP</small>
+                </div>
+
+              <div class="form-group">
+                <label for="Job_blue-collar"><p class="font-weight-bold">Job_blue-collar</p></label>
+                <select id="jbc" name="jbc">
+      <option value="0">Z&eacute;ro</option>
+      <option value="1">Un</option>
+                    </select>
+                <small id="Job_blue-collarHelp" class="form-text text-muted">Entrer Une Valeur SVP</small>
+                </div>
+
+              <div class="form-group">
+                <label for="Job_entrepreneur"><p class="font-weight-bold">Job_entrepreneur</p></label>
+                <select id="jbe" name="jbe">
+      <option value="0">Z&eacute;ro</option>
+      <option value="1">Un</option>
+                    </select>
+                <small id="Job_entrepreneurHelp" class="form-text text-muted">Entrer Une Valeur SVP</small>
+                </div>
+              <div class="form-group">
+                <label for="Job_housemaid"><p class="font-weight-bold">Job_housemaid</p></label>
+                <select id="jh" name="jh">
+      <option value="0">Z&eacute;ro</option>
+      <option value="1">Un</option>
+                    </select>
+                <small id="Job_housemaidHelp" class="form-text text-muted">Entrer Une Valeur SVP</small>
+                </div>
+              <div class="form-group">
+                <label for="Job_management"><p class="font-weight-bold">Job_management</p></label>
+                <select id="jm" name="jm">
+      <option value="0">Z&eacute;ro</option>
+      <option value="1">Un</option>
+                    </select>
+                <small id="Job_managementHelp" class="form-text text-muted">Entrer Une Valeur SVP</small>
+                </div>
+              <div class="form-group">
+                <label for="Job_retired"><p class="font-weight-bold">Job_retired</p></label>
+                <select id="jr" name="jr">
+      <option value="0">Z&eacute;ro</option>
+      <option value="1">Un</option>
+                    </select>
+                <small id="Job_retiredHelp" class="form-text text-muted">Entrer Une Valeur SVP</small>
+                </div>
+              <div class="form-group">
+                <label for="Job_self-employed"><p class="font-weight-bold">Job_self-employed</p></label>
+                <select id="jse" name="jse">
+      <option value="0">Z&eacute;ro</option>
+      <option value="1">Un</option>
+                    </select>
+                <small id="Job_self-employedHelp" class="form-text text-muted">Entrer Une Valeur SVP</small>
+                </div>
+              <div class="form-group">
+                <label for="Job_services"><p class="font-weight-bold">Job_services</p></label>
+                <select id="js" name="jsr">
+      <option value="0">Z&eacute;ro</option>
+      <option value="1">Un</option>
+                    </select>
+                <small id="Job_servicesHelp" class="form-text text-muted">Entrer Une Valeur SVP</small>
+                </div>
+              <div class="form-group">
+                <label for="Job_student"><p class="font-weight-bold">Job_student</p></label>
+                <select id="jst" name="jst">
+      <option value="0">Z&eacute;ro</option>
+      <option value="1">Un</option>
+                    </select>
+                <small id="Job_studentHelp" class="form-text text-muted">Entrer Une Valeur SVP</small>
+                </div>
+              <div class="form-group">
+                <label for="Job_technician"><p class="font-weight-bold">Job_technician</p></label>
+                <select id="jt" name="jt">
+      <option value="0">Z&eacute;ro</option>
+      <option value="1">Un</option>
+                    </select>
+                <small id="Job_technicianHelp" class="form-text text-muted">Entrer Une Valeur SVP</small>
+                </div>
+              <div class="form-group">
+                <label for="Job_unemployed"><p class="font-weight-bold">Job_unemployed</p></label>
+                <select id="ju" name="ju">
+      <option value="0">Z&eacute;ro</option>
+      <option value="1">Un</option>
+                    </select>
+                <small id="Job_unemployedHelp" class="form-text text-muted">Entrer Une Valeur SVP</small>
+                </div>
+              <div class="form-group">
+                <label for="Marital_divorced"><p class="font-weight-bold">Marital_divorced</p></label>
+                <select id="md" name="md">
+      <option value="0">Z&eacute;ro</option>
+      <option value="1">Un</option>
+                    </select>
+                <small id="Marital_divorcedHelp" class="form-text text-muted">Entrer Une Valeur SVP</small>
+                </div>
+              <div class="form-group">
+                <label for="Marital_married"><p class="font-weight-bold">Marital_married</p></label>
+                <select id="mm" name="mm">
+      <option value="0">Z&eacute;ro</option>
+      <option value="1">Un</option>
+                    </select>
+                <small id="Marital_marriedHelp" class="form-text text-muted">Entrer Une Valeur SVP</small>
+                </div>
+              <div class="form-group">
+                <label for="Marital_single"><p class="font-weight-bold">Marital_single</p></label>
+                <select id="ms" name="ms">
+      <option value="0">Z&eacute;ro</option>
+      <option value="1">Un</option>
+                    </select>
+                <small id="Marital_singleHelp" class="form-text text-muted">Entrer Une Valeur SVP</small>
+                </div>
+              <div class="form-group">
+                <label for="Communication_None"><p class="font-weight-bold">Communication_None</p></label>
+                <select id="cn" name="cn">
+      <option value="0">Z&eacute;ro</option>
+      <option value="1">Un</option>
+                    </select>
+                <small id="Communication_NoneHelp" class="form-text text-muted">Entrer Une Valeur SVP</small>
+                </div>
+              <div class="form-group">
+                <label for="Communication_cellular"><p class="font-weight-bold">Communication_cellular</p></label>
+                <select id="cc" name="cc">
+      <option value="0">Z&eacute;ro</option>
+      <option value="1">Un</option>
+                    </select>
+                <small id="Communication_cellularHelp" class="form-text text-muted">Entrer Une Valeur SVP</small>
+                </div>
+              <div class="form-group">
+                <label for="Communication_telephone"><p class="font-weight-bold">Communication_telephone</p></label>
+                <select id="ct" name="ct">
+      <option value="0">Z&eacute;ro</option>
+      <option value="1">Un</option>
+                    </select>
+                <small id="Communication_telephoneHelp" class="form-text text-muted">Entrer Une Valeur SVP</small>
+                </div>
+              <div class="form-group">
+                <label for="Outcome_NoPrev"><p class="font-weight-bold">Outcome_NoPrev</p></label>
+                <select id="on" name="on">
+      <option value="0">Z&eacute;ro</option>
+      <option value="1">Un</option>
+                    </select>
+                <small id="Outcome_NoPrevHelp" class="form-text text-muted">Entrer Une Valeur SVP</small>
+                </div>
+              <div class="form-group">
+                <label for="Outcome_failure"><p class="font-weight-bold">Outcome_failure</p></label>
+                <select id="of" name="of">
+      <option value="0">Z&eacute;ro</option>
+      <option value="1">Un</option>
+                    </select>
+                <small id="Outcome_failureHelp" class="form-text text-muted">Entrer Une Valeur SVP</small>
+                </div>
+              <div class="form-group">
+                <label for="Outcome_other"><p class="font-weight-bold">Outcome_other</p></label>
+                <select id="ot" name="ot">
+      <option value="0">Z&eacute;ro</option>
+      <option value="1">Un</option>
+                    </select>
+                <small id="Outcome_otherHelp" class="form-text text-muted">Entrer Une Valeur SVP</small>
+                </div>
+
+
+                <div class="form-group">
+                  <label for="Outcome_success"><p class="font-weight-bold">Outcome_success</p></label>
+                  <select id="os" name="os">
+      <option value="0">Z&eacute;ro</option>
+      <option value="1">Un</option>
+                    </select>
+                  <small id="Outcome_successHelp" class="form-text text-muted">Entrer Une Valeur SVP</small>
+                  </div>
+
+
+
+                        <input class='btn btn-primary' type='submit' value='PREDIR'><br><br><br><br><br>
+            </form>
+
+          </div>
+          </div>
+          </div>
+
+  </body>
+
+</html>
